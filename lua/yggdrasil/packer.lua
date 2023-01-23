@@ -26,9 +26,10 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+
   use({
       'folke/tokyonight.nvim',
-      as "tokyonight",
+      as = 'tokyonight',
       config = function()
           vim.cmd('colorscheme tokyonight')
       end
