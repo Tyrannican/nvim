@@ -27,6 +27,10 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use ('nvim-treesitter/nvim-treesitter-context')
+  use ({
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  })
 
   use({
       'folke/tokyonight.nvim',
