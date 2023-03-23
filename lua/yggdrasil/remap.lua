@@ -46,3 +46,6 @@ vim.keymap.set("v", "<Left>", "<nop>")
 vim.keymap.set("v", "<Right>", "<nop>")
 vim.keymap.set("v", "<Up>", "<nop>")
 vim.keymap.set("v", "<Down>", "<nop>")
+
+-- Terminal keybinds
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
