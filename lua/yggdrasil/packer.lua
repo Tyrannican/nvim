@@ -40,6 +40,14 @@ return require('packer').startup(function(use)
       end
   })
 
+  use ({
+      'arcticicestudio/nord-vim',
+      as = 'nord',
+      config = function()
+          vim.cmd('colorscheme nord')
+      end
+  })
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
