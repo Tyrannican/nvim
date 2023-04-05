@@ -63,3 +63,5 @@ vim.keymap.set("n", "<A-l>", "<C-w>l")
 
 -- Terminal keybinds
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+vim.keymap.set("n", "<C-t>h", ":split<CR>:term<CR>")
+vim.keymap.set("n", "<C-t>v", ":vsplit<CR>:term<CR>")
