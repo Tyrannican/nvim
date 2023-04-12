@@ -49,12 +49,17 @@ return require('packer').startup(function(use)
   })
 
   use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  requires = {
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},
-		  {'williamboman/mason.nvim'},
-		  {'williamboman/mason-lspconfig.nvim'},
+      'VonHeikemen/lsp-zero.nvim',
+      requires = {
+          -- LSP Support
+          {'neovim/nvim-lspconfig'},
+          {'williamboman/mason.nvim'},
+          {
+              'williamboman/mason-lspconfig.nvim',
+              run = function()
+                  pcall(vim.cmd, 'MasonUpdate')
+              end,
+          },
 
 		  -- Autocompletion
 		  {'hrsh7th/nvim-cmp'},
