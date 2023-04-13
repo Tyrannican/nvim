@@ -48,6 +48,8 @@ return require('packer').startup(function(use)
       end
   })
 
+  use 'RRethy/nvim-base16'
+
   use {
       'VonHeikemen/lsp-zero.nvim',
       requires = {
