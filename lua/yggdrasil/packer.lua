@@ -29,16 +29,6 @@ return require('packer').startup(function(use)
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   })
 
-  use({
-      'folke/tokyonight.nvim',
-      as = 'tokyonight',
-  })
-
-  use ({
-      'arcticicestudio/nord-vim',
-      as = 'nord',
-  })
-
   use 'RRethy/nvim-base16'
 
   use { "catppuccin/nvim", as = "catppuccin" }
