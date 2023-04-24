@@ -16,9 +16,6 @@ return require('packer').startup(function(use)
   use({
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
   })
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -35,20 +32,16 @@ return require('packer').startup(function(use)
   use({
       'folke/tokyonight.nvim',
       as = 'tokyonight',
-      config = function()
-          vim.cmd('colorscheme tokyonight')
-      end
   })
 
   use ({
       'arcticicestudio/nord-vim',
       as = 'nord',
-      config = function()
-          vim.cmd('colorscheme nord')
-      end
   })
 
   use 'RRethy/nvim-base16'
+
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   use {
       'VonHeikemen/lsp-zero.nvim',
