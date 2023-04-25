@@ -61,5 +61,6 @@ return require('packer').startup(function(use)
   }
 
   use 'rust-lang/rust.vim'
+  use 'andweeb/presence.nvim'
 
 end)
