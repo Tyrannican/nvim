@@ -60,6 +60,7 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  use('fatih/vim-go', { run = ':GoUpdateBinaries' })
   use 'rust-lang/rust.vim'
   use 'andweeb/presence.nvim'
 
