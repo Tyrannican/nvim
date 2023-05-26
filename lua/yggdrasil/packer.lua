@@ -31,6 +31,8 @@ return require('packer').startup(function(use)
 
   use 'RRethy/nvim-base16'
 
+  use 'voidekh/kyotonight.vim'
+
   use { "catppuccin/nvim", as = "catppuccin" }
 
   use {
